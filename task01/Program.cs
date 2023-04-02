@@ -28,10 +28,28 @@ void Metod21(string msg, int count)
 
 //Вид3
 
-int Metod3()
+/*int Metod3()
 {
     return DataTime.Now.Year;
 }
 
 int year = Metod3();
-System.Console.WriteLine(year);
+System.Console.WriteLine(year);*/
+
+
+//Вид4
+
+string Metod4(int count, string text)
+{
+    int i =0;
+    string result = String.Empty;
+    while (i<count)
+    {
+        result = result +text;
+        i++;
+    }
+    return result;
+}
+
+string res = Metod4(10, "u");
+System.Console.WriteLine(res);
